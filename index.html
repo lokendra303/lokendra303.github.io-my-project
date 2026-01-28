@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">My Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm Lokendra Kumar</h1>
+                <p class="subtitle">Full Stack Developer | Creative Thinker | Problem Solver</p>
+                <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get In Touch</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>I'm a passionate developer with experience in building web applications. I love creating beautiful, functional websites and solving complex problems with clean code.</p>
+                <div class="skills">
+                    <div class="skill-item">
+                        <h3>Frontend</h3>
+                        <p>HTML, CSS, JavaScript, React</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Backend</h3>
+                        <p>Node.js, Python, Databases</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Tools</h3>
+                        <p>Git, Docker, VS Code</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section alt">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <h3>Project One</h3>
+                    <p>A beautiful web application built with React and Node.js</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <h3>Project Two</h3>
+                    <p>An interactive dashboard with real-time data visualization</p>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>D3.js</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <h3>Project Three</h3>
+                    <p>A mobile app designed with user experience in mind</p>
+                    <div class="project-tags">
+                        <span>React Native</span>
+                        <span>Firebase</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p class="section-subtitle">Feel free to reach out for opportunities or collaborations</p>
+            <div class="contact-content">
+                <a href="mailto:your.email@example.com" class="contact-link">📧 Email Me</a>
+                <a href="https://github.com" target="_blank" class="contact-link">💻 GitHub</a>
+                <a href="https://linkedin.com" target="_blank" class="contact-link">💼 LinkedIn</a>
+                <a href="https://twitter.com" target="_blank" class="contact-link">𝕏 Twitter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
