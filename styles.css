@@ -1620,6 +1620,8 @@ body.dark-mode .qr-code {
         grid-template-columns: 1fr;
         gap: 2rem;
         text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .hero-left h1 {
@@ -1748,6 +1750,10 @@ body.dark-mode .qr-code {
     .contact-link {
         padding: 0.8rem 1.5rem;
         font-size: 0.9rem;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
     }
 }
 
