@@ -5,28 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lokendra Kumar - Backend Developer | Node.js Expert</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="logo">Lokendra Kumar</div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle" class="theme-btn" title="Toggle theme"><i class="fas fa-moon"></i></button></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
         <div class="container">
-            <div class="hero-content">
-                <h1>Hi, I'm Lokendra Kumar</h1>
-                <p class="subtitle">Backend Developer (Node.js) | 4+ Years Experience | Scalable Architecture Expert</p>
-                <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">📧 Get In Touch</button>
+            <div class="hero-grid">
+                <div class="hero-left">
+                    <h1>Hi, I'm <span class="gradient-text">Lokendra Kumar</span></h1>
+                    <div class="typing-wrapper">
+                        <span class="typing-text">Backend Developer</span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description">Crafting scalable backend architectures with 4+ years of expertise in Node.js, REST APIs, and cloud technologies. Passionate about building robust systems that power amazing user experiences.</p>
+                    <div class="hero-stats-mini">
+                        <div class="stat-mini">
+                            <strong>4+</strong>
+                            <span>Years Exp</span>
+                        </div>
+                        <div class="stat-mini">
+                            <strong>50+</strong>
+                            <span>Projects</span>
+                        </div>
+                        <div class="stat-mini">
+                            <strong>15+</strong>
+                            <span>Technologies</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})"><i class="fas fa-envelope"></i> Get In Touch</button>
+                        <button class="btn btn-secondary" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})"><i class="fas fa-rocket"></i> View Work</button>
+                        <a href="#" class="btn btn-outline" download><i class="fas fa-file-download"></i> Resume</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://t.me/yourusername" target="_blank" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="mailto:lk.kushwah303@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:+919084429530" title="Phone"><i class="fas fa-phone"></i></a>
+                        <a href="https://wa.me/919084429530" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="profile-card">
+                        <div class="profile-photo-wrapper">
+                            <div class="photo-ring"></div>
+                            <div class="photo-ring-2"></div>
+                            <img src="https://ui-avatars.com/api/?name=Lokendra+Kumar&size=300&background=667eea&color=fff&bold=true&font-size=0.35" alt="Lokendra Kumar">
+                        </div>
+                        <div class="tech-stack">
+                            <div class="tech-item">Node.js</div>
+                            <div class="tech-item">React</div>
+                            <div class="tech-item">MongoDB</div>
+                            <div class="tech-item">Docker</div>
+                            <div class="tech-item">PostgreSQL</div>
+                            <div class="tech-item">AWS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
             </div>
         </div>
     </section>
@@ -36,23 +102,173 @@
         <div class="container">
             <h2>About Me</h2>
             <div class="about-content">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="4">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                </div>
                 <p>Backend Developer with 4+ years of hands-on experience building scalable and secure backend architectures. Expertise in Node.js, RESTful API development, database design, and third-party integrations, with a strong focus on performance, reliability, and maintainability.</p>
                 <div class="skills">
                     <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-cogs"></i></div>
                         <h3>Backend</h3>
-                        <p>Node.js, REST APIs, JavaScript, Java</p>
+                        <div class="skill-tags">
+                            <span><i class="fab fa-node-js"></i> Node.js</span>
+                            <span><i class="fas fa-code"></i> REST APIs</span>
+                            <span><i class="fab fa-js"></i> JavaScript</span>
+                            <span><i class="fab fa-java"></i> Java</span>
+                            <span><i class="fab fa-python"></i> Python</span>
+                        </div>
                     </div>
                     <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-palette"></i></div>
                         <h3>Frontend</h3>
-                        <p>React.js, Redux, HTML, CSS, Bootstrap, Tailwind CSS</p>
+                        <div class="skill-tags">
+                            <span><i class="fab fa-react"></i> React.js</span>
+                            <span><i class="fas fa-layer-group"></i> Redux</span>
+                            <span><i class="fab fa-html5"></i> HTML/CSS</span>
+                            <span><i class="fas fa-wind"></i> Tailwind</span>
+                        </div>
                     </div>
                     <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
                         <h3>Databases</h3>
-                        <p>MySQL, MongoDB, PostgreSQL</p>
+                        <div class="skill-tags">
+                            <span><i class="fas fa-database"></i> MySQL</span>
+                            <span><i class="fas fa-leaf"></i> MongoDB</span>
+                            <span><i class="fas fa-elephant"></i> PostgreSQL</span>
+                        </div>
                     </div>
                     <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-tools"></i></div>
                         <h3>Tools & DevOps</h3>
-                        <p>Git, GitHub, Bitbucket, Docker</p>
+                        <div class="skill-tags">
+                            <span><i class="fab fa-git-alt"></i> Git</span>
+                            <span><i class="fab fa-docker"></i> Docker</span>
+                            <span><i class="fab fa-github"></i> GitHub</span>
+                            <span><i class="fab fa-bitbucket"></i> Bitbucket</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>IDEs & Editors</h3>
+                        <div class="skill-tags">
+                            <span><i class="fas fa-code"></i> IntelliJ IDEA</span>
+                            <span><i class="fas fa-code"></i> Visual Studio Code</span>
+                            <span><i class="fas fa-code"></i> WebStorm</span>
+                            <span><i class="fas fa-code"></i> PyCharm</span>
+                            <span><i class="fas fa-book"></i> Jupyter Notebook</span>
+                            <span><i class="fas fa-chart-line"></i> Anaconda</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Oct 2023 - Present</div>
+                        <h3>Senior Backend Developer</h3>
+                        <h4>Company Name</h4>
+                        <p>Leading backend architecture for travel booking platform. Developed scalable APIs, integrated third-party services, and optimized database performance.</p>
+                        <div class="timeline-tags">
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>REST APIs</span>
+                            <span>Microservices</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Sep 2022 - Sep 2023</div>
+                        <h3>Backend Developer</h3>
+                        <h4>Tech Solutions Inc.</h4>
+                        <p>Built multi-tenant SaaS backend with JWT authentication, role-based access control, and Docker containerization for consistent deployments.</p>
+                        <div class="timeline-tags">
+                            <span>Node.js</span>
+                            <span>Docker</span>
+                            <span>PostgreSQL</span>
+                            <span>JWT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Mar 2021 - Aug 2022</div>
+                        <h3>Full Stack Developer</h3>
+                        <h4>E-Commerce Solutions</h4>
+                        <p>Developed e-commerce backend with secure payment processing, inventory management, and admin dashboard. Implemented RBAC and transactional integrity.</p>
+                        <div class="timeline-tags">
+                            <span>Node.js</span>
+                            <span>React.js</span>
+                            <span>MySQL</span>
+                            <span>Payment APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Mar 2020 - Feb 2021</div>
+                        <h3>Junior Developer</h3>
+                        <h4>Startup Tech</h4>
+                        <p>Started career building full-stack applications. Worked on book marketplace with authentication, cart management, and recommendation system.</p>
+                        <div class="timeline-tags">
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                            <span>React</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resume-section">
+                <h3>Education & Certifications</h3>
+                <div class="education-grid">
+                    <div class="education-card">
+                        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h4>Bachelor's in Computer Science</h4>
+                        <p>University Name</p>
+                        <span class="edu-year">2016 - 2020</span>
+                    </div>
+                    <div class="education-card">
+                        <div class="edu-icon"><i class="fas fa-certificate"></i></div>
+                        <h4>AWS Certified Developer</h4>
+                        <p>Amazon Web Services</p>
+                        <span class="edu-year">2022</span>
+                    </div>
+                    <div class="education-card">
+                        <div class="edu-icon"><i class="fas fa-trophy"></i></div>
+                        <h4>Node.js Certification</h4>
+                        <p>OpenJS Foundation</p>
+                        <span class="edu-year">2021</span>
                     </div>
                 </div>
             </div>
@@ -139,18 +355,52 @@
             <p class="section-subtitle">Let's connect! Feel free to reach out for opportunities or collaborations</p>
             <div class="contact-info">
                 <div class="contact-item">
-                    <h4>📧 Email</h4>
+                    <h4><i class="fas fa-envelope"></i> Email</h4>
                     <a href="mailto:lk.kushwah303@gmail.com">lk.kushwah303@gmail.com</a>
                 </div>
                 <div class="contact-item">
-                    <h4>📱 Phone</h4>
+                    <h4><i class="fas fa-phone"></i> Phone</h4>
                     <a href="tel:+919084429530">+91 9084429530</a>
                 </div>
             </div>
             <div class="contact-content">
-                <a href="mailto:lk.kushwah303@gmail.com" class="contact-link">📧 Email Me</a>
-                <a href="https://github.com" target="_blank" class="contact-link">💻 GitHub</a>
-                <a href="https://linkedin.com" target="_blank" class="contact-link">💼 LinkedIn</a>
+                <a href="mailto:lk.kushwah303@gmail.com" class="contact-link"><i class="fas fa-envelope"></i> Email Me</a>
+                <a href="#" class="contact-link" download><i class="fas fa-file-download"></i> Download Resume</a>
+                <a href="https://github.com" target="_blank" class="contact-link"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://linkedin.com" target="_blank" class="contact-link"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                <a href="https://twitter.com" target="_blank" class="contact-link"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://t.me/yourusername" target="_blank" class="contact-link"><i class="fab fa-telegram-plane"></i> Telegram</a>
+                <a href="https://wa.me/919084429530" target="_blank" class="contact-link"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+            
+            <div class="qr-section">
+                <h3>Scan to Connect</h3>
+                <div class="qr-grid">
+                    <div class="qr-card">
+                        <div class="qr-code">
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://t.me/yourusername" alt="Telegram QR">
+                        </div>
+                        <p><i class="fab fa-telegram-plane"></i> Telegram</p>
+                    </div>
+                    <div class="qr-card">
+                        <div class="qr-code">
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://linkedin.com/in/yourprofile" alt="LinkedIn QR">
+                        </div>
+                        <p><i class="fab fa-linkedin-in"></i> LinkedIn</p>
+                    </div>
+                    <div class="qr-card">
+                        <div class="qr-code">
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wa.me/919084429530" alt="WhatsApp QR">
+                        </div>
+                        <p><i class="fab fa-whatsapp"></i> WhatsApp</p>
+                    </div>
+                    <div class="qr-card">
+                        <div class="qr-code">
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://github.com/yourusername" alt="GitHub QR">
+                        </div>
+                        <p><i class="fab fa-github"></i> GitHub</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
