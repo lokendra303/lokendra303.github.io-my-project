@@ -773,7 +773,7 @@ body.dark-mode .section.alt {
 
 .skills {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
 }
@@ -1348,16 +1348,16 @@ body.dark-mode .education-card {
 
 .qr-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 2rem;
-    max-width: 900px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    max-width: 800px;
     margin: 0 auto;
 }
 
 .qr-card {
     background: white;
     padding: 2rem;
-    border-radius: 15px;
+    border-radius: 20px;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     border: 2px solid transparent;
@@ -1382,23 +1382,27 @@ body.dark-mode .education-card {
 }
 
 .qr-code {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto 1rem;
-    padding: 10px;
+    width: 220px;
+    height: 220px;
+    margin: 0 auto 1.5rem;
+    padding: 20px;
     background: white;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .qr-code img {
-    width: 100%;
-    height: 100%;
+    width: 250px;
+    height: 260px;
     display: block;
+    object-fit: contain;
 }
 
 .qr-card p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 600;
     color: var(--text-dark);
     margin: 0;
